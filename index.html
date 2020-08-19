@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation Brasil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!--Menu para os conteúdos do site-->
+    <nav class="menu">
+        <ul>
+            <li><img src="assets/img/logo2.png" alt="Logo Generation"></li>
+            <li><a href="">Sobre a Generation</a></li>
+            <li><a href="">Sobre o Curso</a></li>
+            <li><a href="">Currículo do Curso</a></li>
+            <li><a href="">Mercado de Trabalho</a></li>
+            <li><a href="">Increva-se</a></li>
+        </ul>
+    </nav>
+
+    <!--Sobre a Generation-->
+    <div id="ct-sobre">
+        <section id="sobreGen">
+            <h1 class="text-center">Sobre a Generation</h1>
+
+            <div id="container-sobreGen">
+                <div id="texto-sobreGen">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+
+                <div id="video-sobreGen">
+                    <iframe width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/kdGWKGM7yoA" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+        
+        <!--Sobre o curso-->
+        <section id="sobreCurso">
+            <h2 class="text-center">Sobre o curso</h2>
+
+            <div id="container-sobreCurso">
+                <div>
+                    <img id="img-reactN" src="assets/img/logoreact.png" alt="Logo React Native">
+                </div>
+    
+                <div>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
+                        in a piece of classical Latin literature from 45 BC, making it over 2000 years 
+                        old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
+                        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum 
+                        passage, and going through the cites of the word in classical literature, discovered 
+                        the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de 
+                        Finibus Bonorum et Malorum"(The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Curriculo do Curso-->
+        <section id="curriculo">
+            <h1 class="text-center">Currículo do Curso</h1>
+
+            <div id="container-curriculo">
+                <div>
+                    <h3 class="text-center">Unidade I</h3>
+                    <ul>
+                        <li>Plataform.</li>
+                        <li>Web request.</li>
+                        <li>Alteração da StatusBar.</li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h3 class="text-center">Unidade II</h3>
+                    <ul>
+                        <li>Separação de Views.</li>
+                        <li>Separação de Components.</li>
+                        <li>Stateless.</li>
+                        <li>Statefull Components.</li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h3 class="text-center">Unidade III</h3>
+                    <ul>
+                        <li>Coleta de informações do formulário.</li>
+                        <li>Envio de informações para o Backend.</li>
+                        <li>Tratamento de erros ao logar.</li>
+                        <li>AsyncStorage.</li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h3 class="text-center">Unidade IV</h3>
+                    <ul>
+                        <li>Instalação React Navigation.</li>
+                        <li>Navegação entre Telas.</li>
+                        <li>Configuração do cabeçalho de navegação.</li>
+                        <li>Enviando imformações entre Telas.</li>
+                    </ul>
+                </div>
+            </div>  
+        </section>
+
+        <!--Mercado de Trabalho-->
+        <section id="trabalho">
+            <h1 class="text-center">Mercado de Trabalho</h1>
+
+            <p>
+                It is a long established fact that a reader will be distracted by the readable 
+                content of a page when looking at its layout. The point of using Lorem Ipsum is 
+                that it has a more-or-less normal distribution of letters, as opposed to using 
+                'Content here, content here', making it look like readable English. Many desktop 
+                publishing packages and web page editors now use Lorem Ipsum as their default 
+                model text, and a search for 'lorem ipsum' will uncover many web sites still in 
+                their infancy.
+            </p>
+        </section>
+
+        <!--Formulário de inscrição-->
+        <section id="inscricao">
+            <h2 class="text-center">Inscreva-se aqui</h2>
+
+            <div class="container mb-50">
+                <div>
+                    <form>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" onkeyup="validaNome()">
+                        <br>
+                        <br>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" onkeyup="validaEmail()">
+                        <br>
+                        <br>
+                        <label for="data">Data de nascimento:</label>
+                        <input type="text" id="data" onkeyup="validaData()">
+                        <br>
+                        <br>
+                        <label for="estado">Estado em que reside:</label>
+                        <input type="text" id="estado" onkeyup="validaNome()">
+                        <br>
+                        <br>
+                        <label for="descricao">Como ficou sabendo da Generation:</label>
+                        <textarea name="descricao" id="descricao" cols="30" rows="5"></textarea>
+                        <br>
+                        <br>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Seção com as redes sociais da Generation-->
+        <footer>
+            <div id="container-social">
+                <a href="https://www.facebook.com/generationbrasil">
+                    <img class="tm-logo" src="assets/img/facebook.png" alt="Logo do Facebook">
+                </a>
+
+                <a href="https://www.instagram.com/generationbrasil/">
+                    <img class="tm-logo"  src="assets/img/instagram.png" alt="Logo do Instagram">
+                </a>
+
+                <a href="https://www.linkedin.com/school/generationbrasil/">
+                    <img class="tm-logo"  src="assets/img/linkedin.png" alt="Logo do Linkedin">
+                </a>
+            </div>
+
+            <p class="center">
+                Todos os direitos reservados para: 2020 Generation: You Employed, Inc.
+            </p>
+        </footer>
+</body>
+</html>
