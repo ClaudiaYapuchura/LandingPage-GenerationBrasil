@@ -16,7 +16,7 @@
             <li> <a href="#sobreCurso">Sobre o Curso</a> </li>
             <li> <a href="#curriculo">Currículo do Curso</a> </li>
             <li> <a href="#trabalho">Mercado de Trabalho</a> </li>
-            <li> <a href="#inscricao">Increva-se</a> </li>
+            <li> <a href="#inscricao">Inscreva-se</a> </li>
         </ul>
     </nav>
 
@@ -82,6 +82,7 @@
                 <div>
                     <h4 class="text-center">Unidade I</h4>
                     <ul>
+                        <li>Cuidando de plataformas.</li>
                         <li>Plataform.</li>
                         <li>Web request.</li>
                         <li>Alteração da StatusBar.</li>
@@ -92,17 +93,17 @@
                     <h4 class="text-center">Unidade II</h4>
                     <ul>
                         <li>Separação de Views.</li>
-                        <li>Separação de Components.</li>
+                        <li>Separação de Componentes.</li>
                         <li>Stateless.</li>
-                        <li>Statefull Components.</li>
+                        <li>Statefull de Componentes.</li>
                     </ul>
                 </div>
     
                 <div>
                     <h4 class="text-center">Unidade III</h4>
                     <ul>
-                        <li>Coleta de informações do formulário.</li>
-                        <li>Envio de informações para o Backend.</li>
+                        <li>Coleta dados do formulário.</li>
+                        <li>Envio dados para o Backend.</li>
                         <li>Tratamento de erros ao logar.</li>
                         <li>AsyncStorage.</li>
                     </ul>
@@ -111,10 +112,10 @@
                 <div>
                     <h4 class="text-center">Unidade IV</h4>
                     <ul>
-                        <li>Instalação React Navigation.</li>
-                        <li>Navegação entre Telas.</li>
-                        <li>Configuração do cabeçalho de navegação.</li>
-                        <li>Enviando imformações entre Telas.</li>
+                        <li>Inst React Navigation.</li>
+                        <li>Nav entre Telas.</li>
+                        <li>Config cabeçalho.</li>
+                        <li>Envio de dados entre Telas.</li>
                     </ul>
                 </div>
             </div>  
@@ -137,36 +138,41 @@
 
         <!--Formulário de inscrição-->
         <section id="inscricao">
-            <h2 class="text-center">Inscreva-se aqui</h2>
+            <h2 class="text-center">Inscreva-se</h2>
 
-            <div class="container mb-50">
-                <div>
-                    <form>
-                        <label for="nome">Nome Completo:</label>
-                        <input type="text" id="nome" onkeyup="validaNome()">
-                        <br>
-                        <br>
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" onkeyup="validaEmail()">
-                        <br>
-                        <br>
-                        <label for="data">Data de nascimento:</label>
-                        <input type="text" id="data" onkeyup="validaData()">
-                        <br>
-                        <br>
-                        <label for="estado">Estado em que reside:</label>
-                        <input type="text" id="estado" onkeyup="validaNome()">
-                        <br>
-                        <br>
-                        <label for="descricao">Como ficou sabendo da Generation:</label>
-                        <textarea name="descricao" id="descricao" cols="30" rows="5"></textarea>
-                        <br>
-                        <br>
-                        <button>Enviar</button>
-                    </form>
+            <form>
+                <div class="l1">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome">
                 </div>
 
-            </div>
+                <div class="l1">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="l2">
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" id="dataNasc">
+                        
+                    <label for="estado">Estado em que reside:</label>
+                    <select name="estado" id="estado">
+                        <option value="">- Selecione -</option>
+                        <option value="SP">SP</option>
+                        <option value="RJ">RJ</option>
+                        <option value="BA">BA</option>
+                    </select>
+                </div>
+                        
+                <div class="l1">
+                    <label for="descricao">Como ficou sabendo da Generation:</label>
+                    <textarea name="descricao" id="descricao" cols="30" rows="5"></textarea>
+                </div>
+                
+                <div class="l1">
+                    <button onclick="enviar()">Enviar</button>
+                </div>
+            </form>
         </section>
 
         <!--Seção com as redes sociais da Generation-->

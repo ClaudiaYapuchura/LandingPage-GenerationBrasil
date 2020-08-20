@@ -3,12 +3,12 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, label {
+h1, h2, h4, label {
     font-family: 'Alata', sans-serif;    
 }
 
 h1 {
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
 .text-center {
@@ -86,7 +86,7 @@ nav a:hover {
 
 #texto-sobreCurso {
     margin-left: 10px;
-    padding:0 50px;
+    padding:0 60px;
 }
 
 #container-curriculo {
@@ -94,4 +94,45 @@ nav a:hover {
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 40px;
 }
+
+#container-curriculo div {
+    border-style: groove;
+    border-color:#d45f68;
+    padding: 14px;
+}
+
+#container-curriculo ul {
+    list-style: none;
+    padding: 0;
+}
+
+#trabalho p{
+    text-align: justify;
+    margin-top: 40px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+#inscricao div.l1 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#inscricao div.l2 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#inscricao {
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 50px;
+}
+
+
